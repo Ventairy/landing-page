@@ -3,12 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>
+      Ventairy — Stop guessing. Appear at the exact moment they need you.
+    </title>
+    <meta name="description" content="Your venture’s sales, on autopilot" />
+    <meta
+      name="keywords"
+      content="Ventairy, AI Sales Agent, Autonomous Lead Discovery, AI Outreach, Lead Generation, Sales Automation"
+    />
+    <meta name="author" content="Ventairy Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ventairy.com/" />
+    <meta
+      property="og:title"
+      content="Ventairy — Stop guessing. Appear at the exact moment they need you."
+    />
+    <meta
+      property="og:description"
+      content="Ventairy tracks real-world events to find leads that need you now. Let AI handle the discovery while you focus on closing."
+    />
+    <meta
+      property="og:image"
+      content="https://ventairy.com/assets/images/image.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ventairy.com/" />
+    <meta
+      property="twitter:title"
+      content="Ventairy — Stop guessing. Appear at the exact moment they need you."
+    />
+    <meta
+      property="twitter:description"
+      content="Ventairy tracks real-world events to find leads that need you now. Let AI handle the discovery while you focus on closing."
+    />
+    <meta
+      property="twitter:image"
+      content="https://ventairy.com/assets/images/image.png"
+    />
+
+    <!-- Icons -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/images/icon-192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/images/icon-512.png"
+    />
+
+    <link rel="canonical" href="https://ventairy.com/" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Font Preload -->
+    <link
+      rel="preload"
+      href="assets/fonts/poppins-semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/poppins-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
   </head>
   <body>
-    <!-- Waita Landing Page Content will go here -->
-    <main></main>
+    <main class="split-layout">
+      <section class="left-panel">
+        <header class="navbar">
+          <img
+            src="assets/images/ventairy-logo.svg"
+            alt="Ventairy Logo"
+            class="logo-icon"
+            style="width: 160px; height: 50px"
+          />
+        </header>
+
+        <div class="content">
+          <div class="badge">Launching in 2026</div>
+          <h1 class="main-heading">
+            Stop guessing. Appear at the exact moment they need you.
+          </h1>
+          <p class="subheading">
+            Ventairy is an agent that tracks real-world events to find leads
+            that actually need you, right now, and reach out to them. You now
+            just need to show up and close the deal.
+          </p>
+          <button
+            class="cta-button"
+            onclick="window.open('https://tally.so/r/zxKjAE', '_blank')"
+          >
+            Get early access
+          </button>
+        </div>
+      </section>
+
+      <section class="right-panel">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/images/image.png"
+          class="hero-image"
+        >
+          <source src="assets/images/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </main>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
