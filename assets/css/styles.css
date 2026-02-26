@@ -193,10 +193,6 @@ body {
     width: 100%;
   }
 
-  .right-panel::before {
-    display: none; /* Remove overlay on mobile as panels are stacked */
-  }
-
   .video-container {
     width: 100%;
     border-radius: 12px;
