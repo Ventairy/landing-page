@@ -50,16 +50,18 @@ body {
 /* Layout */
 .split-layout {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .left-panel {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 80px 80px;
+  padding: 60px 80px;
   max-width: 50%;
+  overflow-y: auto; /* Fallback if content is taller than screen */
 }
 
 .right-panel {
@@ -73,7 +75,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 80px; /* Fixed margin to reduce gap */
+  margin-bottom: 60px;
 }
 
 .logo-icon {
@@ -91,6 +93,8 @@ body {
 /* Content Area */
 .content {
   max-width: 520px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .badge {
@@ -173,13 +177,16 @@ body {
 @media (max-width: 768px) {
   .split-layout {
     flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
     overflow-x: hidden; /* Prevent horizontal scroll */
   }
 
   .left-panel {
     max-width: 100%;
     padding: 32px 24px;
-    min-height: auto; /* Remove fixed min-height to avoid empty space */
+    justify-content: flex-start;
   }
 
   .content {
@@ -189,7 +196,7 @@ body {
 
   .right-panel {
     min-height: auto;
-    padding: 0 24px 40px 24px; /* Balanced bottom padding */
+    padding: 0 24px 24px 24px;
     width: 100%;
   }
 
@@ -207,6 +214,7 @@ body {
   }
 
   .navbar {
+    position: static;
     margin-bottom: 40px;
   }
 
